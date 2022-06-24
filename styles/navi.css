@@ -1,3 +1,13 @@
+header {
+  background-color: gray;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 16px;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -12,4 +22,16 @@ nav li {
 
 nav li a {
   text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
