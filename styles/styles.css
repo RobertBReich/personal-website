@@ -1,4 +1,21 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: bisque;
+  /*display: flex; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+nav li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav li a {
+  text-decoration: none;
 }
