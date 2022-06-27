@@ -1,8 +1,32 @@
+@import url("/styles/cssreset.css");
+@import url("/styles/navi.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --funky-color: rgb(187, 59, 59);
+
+  --header-hight: 52px;
+  --footer-height: 116px;
+
+  --deine-mudda: 42;
+}
+
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 300;
-  background-color: rgb(46, 45, 45);
+  background-color: var(--primary-color);
+  /*color: var(--secondary-color);*/
+
   /*display: flex; */
+}
+
+.bg-image-big-1 {
+  background-image: url("/images/4.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 h1,
@@ -21,10 +45,13 @@ h1 {
 header {
   margin: 0 auto;
   width: 800px;
+  min-height: var(--header-hight);
 }
 
 main {
-  background-color: white;
+  background-color: var(--funky-color);
+  min-height: calc(100vh - var(--header-hight) - var(--footer-height));
+
   margin: 0 auto;
   width: 800px;
 
@@ -42,158 +69,7 @@ footer {
 
   padding: 50px 0px;
   margin-top: 0px;
-  background-color: black;
-  min-height: 10vh;
-  color: white;
+  background-color: var(--primary-color);
+  min-height: var (--footer-height);
+  color: var(--secondary-color);
 }
-
-/* Card */
-.twittercard {
-  display: flex;
-  flex-direction: column;
-  flex-basis: auto;
-
-  padding: 16px;
-  gap: 24px;
-
-  max-width: 300px;
-  left: 16px;
-  top: 16px;
-
-  background: #ffffff;
-  /* Boxshadow_01 */
-
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
-}
-
-.twittercard {
-  display: flex;
-  flex-direction: column;
-  max-width: 343px;
-  min-width: 300px;
-  height: 100%;
-}
-
-.twittercard img {
-  width: 136px;
-  height: auto;
-  aspect-ratio: 1 / 1;
-}
-
-.twittercard .textelement h3 {
-  font-size: larger;
-  padding-bottom: 8px;
-}
-
-.twittercard .textelement {
-  display: flex;
-  flex-direction: column;
-}
-
-.twittercard em {
-  font-size: small;
-  color: grey;
-}
-
-.twittercard .myaccount {
-  display: flex;
-  flex-direction: column;
-}
-
-.twittercard .myaccount em {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 500px) {
-  .twittercard .myaccount {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .twittercard .myaccount em {
-    margin-right: 16px;
-  }
-
-  .twittercard {
-    display: flex;
-    flex-direction: row;
-    max-width: 343px;
-    height: 100%;
-  }
-
-  .twittercard .textelement {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-.cardcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 16px;
-  flex-wrap: wrap;
-  padding: 16px;
-}
-
-@media (max-width: 500px) {
-  .cardcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 16px;
-  }
-}
-/* 
-
-.twittercard .textelement h3 {
-  font-size: larger;
-  padding-bottom: 8px;
-}
-
-.twittercard .textelement {
-  display: flex;
-  flex-direction: column;
-}
-
-.twittercard .myaccount {
-  display: flex;
-  align-items: center;
-}
-
-.twittercard .myaccount em {
-  margin-right: 16px;
-}
-
-.twittercard em {
-  font-size: small;
-  color: grey;
-}
-
-@media (max-width: 376px) {
-  .twittercard {
-    display: flex;
-    flex-direction: row;
-    max-width: 343px;
-    height: 100%;
-  }
-
-  .twittercard .textelement {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-  }
-
-  .twittercard .myaccount {
-    align-self: flex-end;
-  }
-}
-
-*/
