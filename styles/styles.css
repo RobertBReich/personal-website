@@ -17,7 +17,6 @@ body {
   font-weight: 300;
   background-color: var(--primary-color);
 }
-
 .bg-image-big-1 {
   background-image: url("/images/4.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -97,7 +96,7 @@ main p {
 
 header {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 840px;
   min-height: var(--header-hight);
 }
 
@@ -115,7 +114,7 @@ main {
 
 footer {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 840px;
 
   display: flex;
   flex-direction: row;
